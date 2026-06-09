@@ -1,0 +1,27 @@
+{
+  "projects": [
+    {
+      "name": "开发",
+      "local_path": "E:/UnityProject/Dev"
+    },
+    {
+      "name": "发布",
+      "local_path": "E:/UnityProject/Release"
+    },
+    {
+      "name": "发布外服",
+      "local_path": "E:/UnityProject/Release_Out"
+    }
+  ],
+  "merge_rules": [
+    {
+      "from": "开发",
+      "to": ["发布","发布外服"]
+    }
+  ],
+  "log_limit": 30,
+  "commit_message_template": "合并了修改版本号{rev} 从 {source}:{msg}......",
+  "config_show_name":"代码合并路径",
+  "svn_base_url": "http://xxx.com/xx"
+}
+
